@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.tsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './components/Dashboard';
+import Login from './components/Login';
+import ForgotPassword from './components/ForgotPassword';
+import Settings from './components/Settings';
+import Password from './components/Password';
+import Files from './components/Files';
+import { Box, VStack, Link as ChakraLink } from '@chakra-ui/react';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Router>
+      <Box p={4}>
+        <VStack spacing={4} align="start">
+          <ChakraLink href="/">Dashboard</ChakraLink>
+          <ChakraLink href="/login">Login</ChakraLink>
+          <ChakraLink href="/forgot-password">Forgot Password</ChakraLink>
+          <ChakraLink href="/settings">Settings</ChakraLink>
+          <ChakraLink href="/password">Change Password</ChakraLink>
+          <ChakraLink href="/files">Files</ChakraLink>
+        </VStack>
+      </Box>
 
-export default App
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/password" element={<Password />} />
+        <Route path="/files" element={<Files />} />
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;
