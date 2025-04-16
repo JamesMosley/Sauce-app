@@ -12,7 +12,7 @@ const App = () => {
     <Router>
       <Box p={4}>
         <VStack spacing={4} align="start">
-          <ChakraLink href="/">Dashboard</ChakraLink>
+          <ChakraLink href="/dashboard">Dashboard</ChakraLink>
           <ChakraLink href="/login">Login</ChakraLink>
           <ChakraLink href="/forgot-password">Forgot Password</ChakraLink>
           <ChakraLink href="/settings">Settings</ChakraLink>
@@ -21,7 +21,7 @@ const App = () => {
       </Box>
 
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/settings" element={<Settings />} />
