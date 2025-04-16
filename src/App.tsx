@@ -17,7 +17,7 @@ const App = () => {
           <ChakraLink href="/forgot-password">Forgot Password</ChakraLink>
           <ChakraLink href="/settings">Settings</ChakraLink>
           <ChakraLink href="/password">Change Password</ChakraLink>
-          
+          </VStack>
       </Box>
 
       <Routes>
