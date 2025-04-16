@@ -5,7 +5,6 @@ import Login from './components/Login';
 import ForgotPassword from './components/ForgotPassword';
 import Settings from './components/Settings';
 import Password from './components/Password';
-import Files from './components/Files';
 import { Box, VStack, Link as ChakraLink } from '@chakra-ui/react';
 
 const App = () => {
@@ -18,8 +17,7 @@ const App = () => {
           <ChakraLink href="/forgot-password">Forgot Password</ChakraLink>
           <ChakraLink href="/settings">Settings</ChakraLink>
           <ChakraLink href="/password">Change Password</ChakraLink>
-          <ChakraLink href="/files">Files</ChakraLink>
-        </VStack>
+          
       </Box>
 
       <Routes>
@@ -28,7 +26,6 @@ const App = () => {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/password" element={<Password />} />
-        <Route path="/files" element={<Files />} />
       </Routes>
     </Router>
   );

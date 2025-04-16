@@ -1,10 +1,32 @@
 // src/components/Login.tsx
-import { Box, Button, FormControl, FormLabel, Input, VStack } from '@chakra-ui/react';
+import {
+  Box,
+  Heading,
+  FormControl,
+  FormLabel,
+  Input,
+  Button,
+  VStack,
+  Link as ChakraLink,
+  Text,
+} from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <Box p={8} maxW="md" mx="auto">
-      <Heading mb={6}>Login</Heading>
+    <Box
+      p={8}
+      maxW="md"
+      mx="auto"
+      bg="white"
+      borderRadius="md"
+      boxShadow="lg"
+      mt={8}
+    >
+      <Heading mb={6} textAlign="center">
+        Login
+      </Heading>
+
       <VStack spacing={4}>
         <FormControl>
           <FormLabel>Email</FormLabel>
@@ -17,6 +39,12 @@ const Login = () => {
         <Button colorScheme="teal" w="full">
           Login
         </Button>
+        <Text fontSize="sm">
+          Don't have an account?{" "}
+          <ChakraLink as={Link} to="/forgot-password" color="teal.500">
+            Forgot Password?
+          </ChakraLink>
+        </Text>
       </VStack>
     </Box>
   );

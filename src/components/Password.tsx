@@ -1,10 +1,19 @@
 // src/components/Password.tsx
-import { Box, Button, FormControl, FormLabel, Input, VStack } from '@chakra-ui/react';
+import {
+  Box,
+  Heading,
+  FormControl,
+  FormLabel,
+  Input,
+  Button,
+  VStack,
+} from "@chakra-ui/react";
 
 const Password = () => {
   return (
-    <Box p={8} maxW="md" mx="auto">
+    <Box p={8} maxW="md" mx="auto" bg="white" borderRadius="md" boxShadow="lg">
       <Heading mb={6}>Change Password</Heading>
+
       <VStack spacing={4}>
         <FormControl>
           <FormLabel>Current Password</FormLabel>
