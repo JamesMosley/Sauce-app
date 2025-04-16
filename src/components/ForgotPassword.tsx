@@ -22,7 +22,7 @@ const ForgotPassword = () => {
       boxShadow="lg"
       mt={8}
     >
-      <Heading mb={6} textAlign="center">
+      <Heading textAlign="center" mb={6}>
         Forgot Password
       </Heading>
 
@@ -34,7 +34,7 @@ const ForgotPassword = () => {
         <Button colorScheme="blue" w="full">
           Reset Password
         </Button>
-        <Text fontSize="sm">
+        <Text fontSize="sm" textAlign="center">
           Remember your password?{" "}
           <Link to="/login" style={{ color: "#319795", textDecoration: "none" }}>
             Login

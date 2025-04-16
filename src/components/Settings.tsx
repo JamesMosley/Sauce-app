@@ -5,6 +5,7 @@ import {
   FormControl,
   FormLabel,
   Input,
+  Select,
   Button,
   VStack,
   Divider,
@@ -13,7 +14,7 @@ import {
 const Settings = () => {
   return (
     <Box p={8}>
-      <Heading mb={6}>Settings</Heading>
+      <Heading mb={6}>Account Settings</Heading>
 
       <VStack spacing={4} align="stretch">
         <FormControl>
@@ -25,8 +26,12 @@ const Settings = () => {
           <Input placeholder="Enter your email" />
         </FormControl>
         <FormControl>
-          <FormLabel>Phone Number</FormLabel>
-          <Input placeholder="Enter your phone number" />
+          <FormLabel>Favorite Team</FormLabel>
+          <Select placeholder="Select your favorite team">
+            <option value="lakers">Los Angeles Lakers</option>
+            <option value="warriors">Golden State Warriors</option>
+            <option value="nets">Brooklyn Nets</option>
+          </Select>
         </FormControl>
         <Divider my={4} />
         <Button colorScheme="purple" w="full">

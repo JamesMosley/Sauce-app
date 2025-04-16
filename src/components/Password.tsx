@@ -11,8 +11,18 @@ import {
 
 const Password = () => {
   return (
-    <Box p={8} maxW="md" mx="auto" bg="white" borderRadius="md" boxShadow="lg">
-      <Heading mb={6}>Change Password</Heading>
+    <Box
+      p={8}
+      maxW="md"
+      mx="auto"
+      bg="white"
+      borderRadius="md"
+      boxShadow="lg"
+      mt={8}
+    >
+      <Heading textAlign="center" mb={6}>
+        Change Password
+      </Heading>
 
       <VStack spacing={4}>
         <FormControl>

@@ -7,8 +7,8 @@ import {
   Input,
   Button,
   VStack,
-  Link as ChakraLink,
   Text,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
@@ -23,8 +23,8 @@ const Login = () => {
       boxShadow="lg"
       mt={8}
     >
-      <Heading mb={6} textAlign="center">
-        Login
+      <Heading textAlign="center" mb={6}>
+        Sports Login
       </Heading>
 
       <VStack spacing={4}>
@@ -39,7 +39,7 @@ const Login = () => {
         <Button colorScheme="teal" w="full">
           Login
         </Button>
-        <Text fontSize="sm">
+        <Text fontSize="sm" textAlign="center">
           Don't have an account?{" "}
           <ChakraLink as={Link} to="/forgot-password" color="teal.500">
             Forgot Password?
