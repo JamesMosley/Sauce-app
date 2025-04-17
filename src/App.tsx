@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Router>
       <Box p={4}>
-        <VStack spacing={4} align="start">
+        <VStack  align="start">
           <ChakraLink href="/dashboard">Dashboard</ChakraLink>
           <ChakraLink href="/login">Login</ChakraLink>
           <ChakraLink href="/forgot-password">Forgot Password</ChakraLink>
