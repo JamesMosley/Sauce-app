@@ -2,6 +2,7 @@
 import {
   Box,
   Heading,
+  Flex,
   Text,
   SimpleGrid,
   Stat,
