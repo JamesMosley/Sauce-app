@@ -24,7 +24,7 @@ const Dashboard = () => {
       <Heading mb={6}>Sports Dashboard</Heading>
 
       {/* Key Metrics */}
-      <SimpleGrid columns={[1, 2, 3]} spacing={6} mb={8}>
+      <SimpleGrid columns={[1, 2, 3]}  mb={8}>
         <Stat bg="white" p={4} borderRadius="md" boxShadow="sm">
           <StatLabel>Total Teams</StatLabel>
           <StatNumber>30</StatNumber>
