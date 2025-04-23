@@ -5,9 +5,9 @@ import {
   Flex,
   Text,
   SimpleGrid,
-  Stat,
+ 
   StatLabel,
-  StatNumber,
+  
   StatHelpText,
   Button,
   Image,
@@ -25,21 +25,21 @@ const Dashboard = () => {
 
       {/* Key Metrics */}
       <SimpleGrid columns={[1, 2, 3]}  mb={8}>
-        <Stat bg="white" p={4} borderRadius="md" boxShadow="sm">
+       
           <StatLabel>Total Teams</StatLabel>
-          <StatNumber>30</StatNumber>
+         
           <StatHelpText>+2 new teams this season</StatHelpText>
-        </Stat>
-        <Stat bg="white" p={4} borderRadius="md" boxShadow="sm">
+        
+      
           <StatLabel>Active Players</StatLabel>
-          <StatNumber>450</StatNumber>
+        
           <StatHelpText>+15% growth this year</StatHelpText>
-        </Stat>
-        <Stat bg="white" p={4} borderRadius="md" boxShadow="sm">
+       
+        
           <StatLabel>Upcoming Matches</StatLabel>
-          <StatNumber>12</StatNumber>
+        
           <StatHelpText>Next 2 weeks</StatHelpText>
-        </Stat>
+        
       </SimpleGrid>
 
       {/* Upcoming Matches */}
