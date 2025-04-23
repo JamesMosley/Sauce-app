@@ -24,7 +24,7 @@ const Password = () => {
         Change Password
       </Heading>
 
-      <VStack spacing={4}>
+      <VStack >
         <FormControl>
           <FormLabel>Current Password</FormLabel>
           <Input type="password" placeholder="Enter current password" />
