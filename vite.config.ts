@@ -5,16 +5,12 @@ import type { Plugin } from "rollup";
 
 const originalPlugin = rollupNodePolyFill();
 
-// Patch plugin with correct types
 const patchedPolyfillPlugin: Plugin = {
   ...originalPlugin,
-  resolveId(
-    source: string,
-    importer: string | undefined,
-    options: { custom?: any; isEntry: boolean; attributes: Record<string, string> }
-  ) {
+  resolveId(source, importer, _options) {
     if (typeof originalPlugin.resolveId === "function") {
-      return originalPlugin.resolveId.call(this, source, importer ?? "", options);
+      return originalPlugin.resolveId.call(this, source, importer || "");
+
     }
     return null;
   },
