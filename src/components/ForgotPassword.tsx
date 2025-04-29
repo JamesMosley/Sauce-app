@@ -9,7 +9,7 @@ import {
   VStack,
   Text,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import ChakraRouterLink from "./ChakraRouterLink"; // ✅ custom wrapper link
 
 const ForgotPassword = () => {
   return (
@@ -31,14 +31,16 @@ const ForgotPassword = () => {
           <FormLabel>Email</FormLabel>
           <Input type="email" placeholder="Enter your email" />
         </FormControl>
+
         <Button colorScheme="blue" w="full">
           Reset Password
         </Button>
+
         <Text fontSize="sm" textAlign="center">
           Remember your password?{" "}
-          <Link to="/login" style={{ color: "#319795", textDecoration: "none" }}>
+          <ChakraRouterLink to="/login" color="teal.500" textDecoration="none">
             Login
-          </Link>
+          </ChakraRouterLink>
         </Text>
       </VStack>
     </Box>
