@@ -2,14 +2,15 @@
 import {
   Box,
   Heading,
-  FormControl,
-  FormLabel,
   Input,
   Button,
-  VStack,
+  
   Text,
 } from "@chakra-ui/react";
-import ChakraRouterLink from "./ChakraRouterLink"; // ✅ custom wrapper link
+import { VStack } from "@chakra-ui/layout";
+
+import { FormControl, FormLabel } from "@chakra-ui/form-control";
+import ChakraRouterLink from "./ChakraRouterLink"; // Custom router link component
 
 const ForgotPassword = () => {
   return (
@@ -38,7 +39,7 @@ const ForgotPassword = () => {
 
         <Text fontSize="sm" textAlign="center">
           Remember your password?{" "}
-          <ChakraRouterLink to="/login" color="teal.500" textDecoration="none">
+          <ChakraRouterLink to="/login" color="teal.500">
             Login
           </ChakraRouterLink>
         </Text>
