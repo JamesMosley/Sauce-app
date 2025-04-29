@@ -1,12 +1,12 @@
 // src/components/ChakraRouterLink.tsx
+import { Link as RouterLink, LinkProps as RouterLinkProps } from "react-router-dom";
+import { Link as ChakraLink, LinkProps as ChakraLinkProps } from "@chakra-ui/react";
 
-import { Link as RouterLink } from "react-router-dom";
-import { chakraFactory } from "@chakra-ui/react";
+type ChakraRouterLinkProps = Omit<ChakraLinkProps, "href"> & RouterLinkProps;
 
-// Create chakra version of RouterLink
-const ChakraRouterLink = chakraFactory(RouterLink, {
-  shouldForwardProp: (prop) =>
-    ["to", "replace", "state", "reloadDocument", "preventScrollReset"].includes(prop),
-});
+export const ChakraRouterLink = (props: ChakraRouterLinkProps) => {
+  return <ChakraLink as={RouterLink} {...props} />;
+};
+
 
 export default ChakraRouterLink;
