@@ -11,8 +11,7 @@ import {
 
 import { VStack } from "@chakra-ui/layout";
 import { FormControl, FormLabel } from "@chakra-ui/form-control";
-import { Link } from "react-router-dom";
-
+import { Link as RouterLink } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -46,7 +45,11 @@ const Login = () => {
 
         <Text fontSize="sm" textAlign="center">
           Don't have an account?{" "}
-          <ChakraLink as={Link} to="/forgot-password" color="teal.500">
+          <ChakraLink
+            as={RouterLink}
+            to="/forgot-password"
+            color="teal.500"
+          >
             Forgot Password?
           </ChakraLink>
         </Text>
