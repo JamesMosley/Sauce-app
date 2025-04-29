@@ -8,7 +8,8 @@ import Login from "./components/Login";
 import ForgotPassword from "./components/ForgotPassword";
 import Settings from "./components/Settings";
 import Password from "./components/Password";
-import ChakraRouterLink from "./components/ChakraRouterLink"; // <-- use this
+
+import ChakraRouterLink from "./components/ChakraRouterLink";
 
 const App = () => {
   return (
