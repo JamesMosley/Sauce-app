@@ -1,24 +1,25 @@
 // src/App.tsx
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Box, VStack, Link as ChakraLink } from "@chakra-ui/react";
+import { Box, VStack } from "@chakra-ui/react";
 
 import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
 import ForgotPassword from "./components/ForgotPassword";
 import Settings from "./components/Settings";
 import Password from "./components/Password";
-import ChakraRouterLink from "./components/RouterLink"; // 👈 important
+import ChakraRouterLink from "./components/ChakraRouterLink"; // <-- use this
 
 const App = () => {
   return (
     <Router>
       <Box p={4}>
         <VStack align="start">
-          <ChakraLink as={ChakraRouterLink} to="/dashboard">Dashboard</ChakraLink>
-          <ChakraLink as={ChakraRouterLink} to="/login">Login</ChakraLink>
-          <ChakraLink as={ChakraRouterLink} to="/forgot-password">Forgot Password</ChakraLink>
-          <ChakraLink as={ChakraRouterLink} to="/settings">Settings</ChakraLink>
-          <ChakraLink as={ChakraRouterLink} to="/password">Change Password</ChakraLink>
+          <ChakraRouterLink to="/dashboard">Dashboard</ChakraRouterLink>
+          <ChakraRouterLink to="/login">Login</ChakraRouterLink>
+          <ChakraRouterLink to="/forgot-password">Forgot Password</ChakraRouterLink>
+          <ChakraRouterLink to="/settings">Settings</ChakraRouterLink>
+          <ChakraRouterLink to="/password">Change Password</ChakraRouterLink>
         </VStack>
       </Box>
 
