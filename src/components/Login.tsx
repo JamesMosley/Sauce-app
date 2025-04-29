@@ -6,12 +6,11 @@ import {
   Input,
   Button,
   Text,
-  Link as ChakraLink,
 } from "@chakra-ui/react";
 
 import { VStack } from "@chakra-ui/layout";
 import { FormControl, FormLabel } from "@chakra-ui/form-control";
-import { Link as RouterLink } from "react-router-dom";
+import ChakraRouterLink from "./ChakraRouterLink"; // ✅ custom link component
 
 const Login = () => {
   return (
@@ -45,13 +44,9 @@ const Login = () => {
 
         <Text fontSize="sm" textAlign="center">
           Don't have an account?{" "}
-          <ChakraLink
-            as={RouterLink}
-            to="/forgot-password"
-            color="teal.500"
-          >
+          <ChakraRouterLink to="/forgot-password" color="teal.500">
             Forgot Password?
-          </ChakraLink>
+          </ChakraRouterLink>
         </Text>
       </VStack>
     </Box>
