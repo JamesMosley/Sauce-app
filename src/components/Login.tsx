@@ -1,6 +1,5 @@
 // src/components/Login.tsx
-import { FormControl } from "@chakra-ui/react";
-import { FormLabel } from "@chakra-ui/react";
+
 import {
   Box,
   Heading,
@@ -10,8 +9,13 @@ import {
   Text,
   Link as ChakraLink,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 
+import {
+  FormControl,
+  FormLabel,
+} from "@chakra-ui/form-control";
+
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
