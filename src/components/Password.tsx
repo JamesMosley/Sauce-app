@@ -1,13 +1,15 @@
-// src/components/Password.tsx
+// src/components/ForgotPassword.tsx
 import {
   Box,
   Heading,
-  FormControl,
-  FormLabel,
   Input,
   Button,
-  VStack,
+  
+  
 } from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/layout";
+
+import { FormControl, FormLabel } from "@chakra-ui/form-control";
 
 const Password = () => {
   return (
