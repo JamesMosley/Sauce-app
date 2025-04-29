@@ -2,14 +2,18 @@
 import {
   Box,
   Heading,
-  FormControl,
-  FormLabel,
+ 
   Input,
-  Select,
+  
   Button,
-  VStack,
-  Divider,
+  
+  
 } from "@chakra-ui/react";
+
+import { FormControl, FormLabel } from "@chakra-ui/form-control";
+import { VStack } from "@chakra-ui/layout";
+import { Divider } from "@chakra-ui/layout";
+import { Select } from "@chakra-ui/select";
 
 const Settings = () => {
   return (
