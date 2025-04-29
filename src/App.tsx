@@ -1,11 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link as RouterLink } from "react-router-dom";
+import { Box, VStack, Link as ChakraLink } from "@chakra-ui/react";
 import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
 import ForgotPassword from "./components/ForgotPassword";
 import Settings from "./components/Settings";
 import Password from "./components/Password";
-import { Box, VStack, Link as ChakraLink } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 
 const App = () => {
   return (
