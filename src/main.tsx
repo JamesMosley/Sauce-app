@@ -1,11 +1,13 @@
-// src/main.tsx
+// src/main.tsx or index.tsx
 import React from "react";
-import { createRoot } from "react-dom/client";
-
+import ReactDOM from "react-dom/client";
+import { ChakraProvider } from "@chakra-ui/react"; // ✅ CORRECT
 import App from "./App";
 
-createRoot(document.getElementById("root")!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App/>
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
   </React.StrictMode>
 );
