@@ -5,17 +5,14 @@ import {
   Heading,
   Input,
   Button,
-  VStack,
   Text,
   Link as ChakraLink,
 } from "@chakra-ui/react";
 
-import {
-  FormControl,
-  FormLabel,
-} from "@chakra-ui/form-control";
-
+import { VStack } from "@chakra-ui/layout";
+import { FormControl, FormLabel } from "@chakra-ui/form-control";
 import { Link } from "react-router-dom";
+
 
 const Login = () => {
   return (
