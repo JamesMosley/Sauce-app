@@ -14,13 +14,13 @@ import { FormControl, FormLabel } from "@chakra-ui/form-control";
 const Password = () => {
   return (
     <Box
-      p={8}
+      p={10}
       maxW="md"
       mx="auto"
       bg="white"
       borderRadius="md"
       boxShadow="lg"
-      mt={8}
+      mt={10}
     >
       <Heading textAlign="center" mb={6}>
         Change Password
